@@ -1,0 +1,66 @@
+﻿<!doctype>
+<html>
+<head>
+<title>Story Generator</title>
+<meta name="author" content="Aibarsha Demezhan" />
+<style type="text/css">
+ .done {font-family:Tahoma}
+ .header {font-size:x-large; font-weight:bold}
+ .font {font-family:Comic Sans MS; color:Blue}
+ .hidden {display:none}
+ .red {color:red}
+</style>
+<script type="text/javascript" src=storyGenerator.js></script>
+</head>
+
+<body>
+<div id="form" class="form1"><h1>Story Generator</h1>
+Enter appropriate values in all of the text boxes. Then click the <span class="done">Done</span>
+button to generate a story with your entered values plugged into it.<br/><br/>
+<form><div>
+  <table>
+    <tr>
+    <td>your name: </td>
+    <td><input type="text" id="name" /></td>
+    </tr>
+    <tr>
+    <td><br/>noun:</td>
+    <td><br/><input type="text" id="noun" /></td>
+    </tr>
+    <tr>
+    <td>past tense verb: </td>
+    <td><input type="text" id="past" /></td>
+    </tr>
+    <tr>
+    <td>adjective: </td>
+    <td><input type="text" id="adj" /></td>
+    </tr>
+    <tr>
+    <td>past tense verb: </td>
+    <td><input type="text" id="past2" /></td>
+    </tr>
+    <tr>
+    <td>adjective: </td>
+    <td><input type="text" id="adj2" /></td>
+    </tr>
+  </table><br /><br />
+ <input type="button" value="Done" onclick="replace(this.form)" />
+ <input type="reset" value="Reset"/>
+</div></form>
+</div>
+<div id="bottom" class="hidden">
+ <span class="font header" >It was a Dark and Stormy Night, by <span id="missingName"></span></span> 
+<p id="story" class="font">
+ 
+  It was a dark and stormy night. A shot rang out! A <span></span> slammed.
+  The maid <span></span>. Suddenly, a <span></span> ship appeared on  
+  the horizon! While millions of people <span></span>, the king lived in luxury. 
+  Meanwhile, on a <span></span> farm in Kansas, a boy was growing up.
+  <br/><br/>
+  The End
+<br/><br/><br/>
+<input type="button" value="Return" onclick="returnForm()"/>
+</p>
+</div>
+</body>
+</html>
